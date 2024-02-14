@@ -13,17 +13,12 @@
     padding: 0;
 }
 
-#block_allcontainer {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    margin: 20px 0px;
-}
-
 header {
-    background-color: #DC5F5F;
-
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-top: 5px #DC5F5F solid;
 }
 
 #block_titre {
@@ -50,7 +45,7 @@ h1 {
     color: #DC5F5F;
 }
 
-p{
+#slogan{
     font-family: Roboto;
 }
 
@@ -104,8 +99,10 @@ li {
     #nav_list {
         flex-direction: column;
     }
-    #nav_list:hover {
-        background-color: #cd4646;
+    #input_sabonner {
+        display: none;
     }
-
+    #slogan {
+        display: none;
+    }
 }
