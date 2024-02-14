@@ -81,7 +81,7 @@ h2 {
     background-color: #FFD830;
     padding: 10px;
     border-radius: 3px;
-    margin-right: 55px;
+    margin-right: 60px;
 }
 
 #input_sabonner:hover {
@@ -157,4 +157,41 @@ img {
     background-color: white;
     margin: 10px;
     box-sizing: border-box;
+}
+
+footer {
+    background-color: #D44C4D;
+    color: white;
+    padding: 10px;
+    max-width: 100%;
+    margin-top: 50px;
+    
+}
+
+#list_footer {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Roboto;
+
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media  screen and (max-width : 495px ) {
+    #list_footer {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 10px 0px;
+    }
+    .footer_container {
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
 }
