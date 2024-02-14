@@ -92,7 +92,7 @@ li {
     padding: 10px;
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 490px) {
     nav {
         background-color:#DC5F5F;
     }
@@ -103,6 +103,9 @@ li {
         display: none;
     }
     #slogan {
+        display: none;
+    }
+    #nav_menu{
         display: none;
     }
 }
