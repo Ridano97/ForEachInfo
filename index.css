@@ -39,13 +39,31 @@ select:hover {
     background-color: rgb(191, 184, 184);
 } 
 
+#image_menu {
+    width: 40px;
+    height: 40px;
+
+}   
+
+button {
+    border: none;
+    border-radius: 3px;
+    margin-left: 50px;
+    padding: 0px;
+
+}
+
 h1 {
     padding: 0px 10px;
+    font-family: Chunk;
+    color: #DC5F5F;
 }
 
 h2 {
     font-family: Chunk ;
     color: #DC5F5F;
+    padding: 20px;
+    margin-left: 50px;
 }
 
 #slogan{
@@ -63,7 +81,7 @@ h2 {
     background-color: #FFD830;
     padding: 10px;
     border-radius: 3px;
-    margin-right: 30px;
+    margin-right: 55px;
 }
 
 #input_sabonner:hover {
@@ -124,12 +142,12 @@ img {
     list-style: none;
     font-family: Roboto Ligth ;
     background-color: #DEDEDE;
-    margin: 0;
+    margin: 0px 70px;
     padding: 10px;
 }
 
 .titre_articles {
-    font-family: Roboto Medium;
+    font-family: Roboto;
 }
 
 .rubrique_container {
@@ -137,4 +155,6 @@ img {
     width: 25%;
     box-sizing: border-box;
     background-color: white;
+    margin: 10px;
+    box-sizing: border-box;
 }
