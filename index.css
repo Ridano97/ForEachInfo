@@ -53,6 +53,12 @@ button:hover {
     background-color: grey;
 }
 
+a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: white;
+
+}
 
 h1 {
     padding: 0px 10px;
@@ -116,10 +122,15 @@ li {
     padding: 10px;
 }
 
-@media screen and (max-width : 490px) {
+@media screen and (max-width : 480px) {
     nav {
         background-color:#DC5F5F;
     }
+
+    h1 {
+        text-align: center;
+    }
+
     #nav_list {
         flex-direction: column;
     }
@@ -134,13 +145,10 @@ li {
     }
 
     #rubrique {
-        flex-direction: column
-    }
+        flex-direction: column;
+        width: 100%
 
-    .rubrique_container {
-        display: flex;
     }
-
 
     #list_footer {
         flex-direction: column;
@@ -159,7 +167,8 @@ li {
         text-align: center;
      }
 }
-img {
+
+.image_rubrique {
     width: 200px;
     height: 220px;
     padding: 5px;
