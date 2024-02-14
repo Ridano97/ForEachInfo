@@ -8,6 +8,11 @@
     src: url(./assets/fonts/Roboto-Medium.ttf);
 }
 
+@font-face {
+    font-family: "Roboto2" ;
+    src: url(./assets/fonts/Roboto-Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,21 +32,9 @@ header {
   
 }
 
-select { 
-    background-color: #EBEBEB;
-    margin-left: 30px;
-    border: none;
-    border-radius: 3px;
-    padding: 10px;
-}
-
-select:hover {
-    background-color: rgb(191, 184, 184);
-} 
-
 #image_menu {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 
 }   
 
@@ -49,9 +42,17 @@ button {
     border: none;
     border-radius: 3px;
     margin-left: 50px;
-    padding: 0px;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
 
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
 
 h1 {
     padding: 0px 10px;
@@ -67,7 +68,7 @@ h2 {
 }
 
 #slogan{
-    font-family: Roboto;
+    font-family: Roboto2;
 }
 
 #block_input {
@@ -86,6 +87,7 @@ h2 {
 
 #input_sabonner:hover {
     background-color: rgb(216, 184, 58);
+    cursor: pointer;
 }
 
 nav {
@@ -106,6 +108,7 @@ nav {
 
 #nav_list :hover {
     background-color: #cd4646;
+    cursor: pointer;
 }
 
 li {
@@ -126,14 +129,40 @@ li {
     #slogan {
         display: none;
     }
-    #nav_menu{
+    #button_write{
         display: none;
     }
+
+    #rubrique {
+        flex-direction: column
+    }
+
+    .rubrique_container {
+        display: flex;
+    }
+
+
+    #list_footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     }
+     .footer_container {
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+     }
+     span {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+     }
 }
 img {
     width: 200px;
-    height: 200px;
-    padding: 15px;
+    height: 220px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -148,6 +177,11 @@ img {
 
 .titre_articles {
     font-family: Roboto;
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
 }
 
 .rubrique_container {
@@ -157,6 +191,11 @@ img {
     background-color: white;
     margin: 10px;
     box-sizing: border-box;
+}
+
+.rubrique_container:hover {
+    background-color: rgb(202, 202, 123);
+    cursor: pointer;
 }
 
 footer {
@@ -173,7 +212,7 @@ footer {
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    font-family: Roboto;
+    font-family: Roboto2;
 
 }
 
@@ -181,6 +220,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+span:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: Roboto;
 }
 
 @media  screen and (max-width : 495px ) {
